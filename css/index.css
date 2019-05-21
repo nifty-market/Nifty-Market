@@ -132,12 +132,13 @@ body {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 2rem;
   background: #202b31;
 }
 a {
-  color: #f37748;
+  text-shadow: 0 0 5px #ffffff;
+  color: #5d00d6;
   text-decoration: none;
 }
 .form {
