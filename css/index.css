@@ -127,5 +127,12 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #002649;
+  height: 100vh;
+  background: #002649 !important;
+}
+nav {
+  background: #202b31;
+}
+a {
+  color: #f37748;
 }
