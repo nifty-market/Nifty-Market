@@ -128,11 +128,24 @@ table {
 }
 body {
   height: 100vh;
-  background: #002649 !important;
+  background: #002649;
 }
 nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
   background: #202b31;
 }
 a {
   color: #f37748;
+  text-decoration: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.field {
+  display: flex;
+  justify-content: space-between;
+  width: 275px;
 }
