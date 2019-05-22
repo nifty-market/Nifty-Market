@@ -131,6 +131,7 @@ body {
   width: 950px;
   margin: auto;
   background: #002649;
+  font-family: 'Saira', sans-serif;
 }
 p {
   font-size: 2.2rem;
@@ -138,13 +139,15 @@ p {
 h2 {
   font-size: 3.7rem;
 }
+i {
+  color: @snow;
+}
 .picture-box {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 .container {
-  height: 100vh;
   overflow: hidden;
 }
 .top-content {
@@ -156,8 +159,14 @@ h2 {
   justify-content: center;
 }
 .bottom-content {
+  padding: 5px;
   display: flex;
   direction: row;
+}
+.tradeCard {
+  border-radius: 10px;
+  height: 475px;
+  width: 300px;
 }
 .topLogo {
   background: #202b31;
@@ -171,7 +180,7 @@ nav {
 }
 nav a {
   padding: 5px;
-  text-shadow: 0 0 5px #fffbf7;
+  text-shadow: 0 0 7px #fffbf7;
   color: #202b31;
   text-decoration: none;
 }
@@ -182,6 +191,7 @@ nav a {
 }
 .form {
   font-size: 1.3rem;
+  padding: 9px;
   border: 7px solid #fffbf7;
   border-radius: 15px;
   display: inline-block;
@@ -203,5 +213,5 @@ nav a {
   width: 275px;
 }
 label {
-  padding: 5px;
+  padding: 1px;
 }
