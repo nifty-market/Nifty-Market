@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira:300,400,500,600,700&display=swap" rel="stylesheet" />
 
 
 
@@ -19,7 +19,7 @@
 
 <body>
 
-  <header>
+  <header class="topLogo">
     <img src="img/LuisLogo.png" alt="niftymarket logo">
   </header>
 
@@ -27,88 +27,113 @@
 
   <nav>
     <a href="#">Home</a>
+    <a href="#">Community</a>
+    <a href="#">Buy/sell</a>
+    <a href="#">Trade</a>
     <a href="#">About Us</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-    <a href="#">Sign in</a>
   </nav>
-  <div class="contain">
+  <div class="container">
 
     <h1></h1>
 
 
-    <div class="row">
-      <div class="row__inner">
-
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="img/mtgheader-1140x641.jpg" alt="" />
-          </div>
-          <div class="tile__details">
-
-          </div>
-        </div>
-
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="img/magicthegathering.jpg" alt="" />
-          </div>
-          <div class="tile__details">
-
-          </div>
-        </div>
-
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="img/773c3619-2bd7-488f-8669-fa9585ee1a3b.jpg" alt="" />
-          </div>
-          <div class="tile__details">
-
-          </div>
-        </div>
-
-
-
-
+    <div class="form">
+      <div class='field'>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
       </div>
+
+      <div class="field">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <div class="field">
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      </div>
+
+
+      <div class="field">
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+      </div>
+
+      <div class="termsPrivacy">
+        <section>By creating an account you agree to our <a href="terms">Terms & Privacy</a>.</section>
+      </div>
+
+
+      <div class="clearFix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+
     </div>
-
-  </div>
-  <div class="form">
-    <div class='field'>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-    </div>
-
-    <div class="field">
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-    </div>
-
-    <div class="field">
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    </div>
-
-
-    <div class="field">
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-    </div>
-
-    <div class="field">
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    </div>
-
-
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
-
   </div>
 
+  <div class="topImage">
+    <img src="img/magic-duels-screenshot.jpg">
+  </div>
+
+  <hr>
+  <section class="top-content">
+    <div class="welcome">
+      <h2>Welcome</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et.
+        Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+        ornare nisl. Nullam convallis augue justo, at imperdiet metus
+        scelerisque quis.
+      </p>
+    </div>
+
+    <div class="Community">
+      <h2>Community</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et.
+        Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+        ornare nisl. Nullam convallis augue justo, at imperdiet metus
+        scelerisque quis.
+      </p>
+    </div>
+  </section>
+  <div class="picture-box">
+    <img class="middle-img" src="img/magicthegathering.jpg" alt="duel" />
+  </div>
+  <section class="bottom-content">
+    <div class="Buy">
+      <h2>Buy</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et.
+        Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+        ornare nisl. Nullam convallis augue justo, at imperdiet metus
+        scelerisque quis.
+      </p>
+    </div>
+
+    <div class="Sell">
+      <h2>Sell</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et.
+        Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+        ornare nisl. Nullam convallis augue justo, at imperdiet metus
+        scelerisque quis.
+      </p>
+    </div>
+
+    <div class="Trade">
+      <h2>Trade</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et.
+        Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+        ornare nisl. Nullam convallis augue justo, at imperdiet metus
+        scelerisque quis.
+      </p>
+    </div>
+  </section>
+  <hr />
 
 
 
@@ -119,10 +144,37 @@
 
 
 
-  <footer>
-    <p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="bottomLogo">
+    <img src="img/LuisLogo.png" alt="niftymarket logo">
   </footer>
-
 
 </body>
 
