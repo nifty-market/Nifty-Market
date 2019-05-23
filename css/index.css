@@ -160,10 +160,10 @@ i {
   font-size: 4rem;
   color: #fffbf7;
 }
-.picture-box {
+.iconContainer {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .container {
   overflow: hidden;
