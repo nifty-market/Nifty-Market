@@ -128,19 +128,37 @@ table {
 }
 body {
   height: 100vh;
-  width: 950px;
-  margin: auto;
-  background: #002649;
+  margin: 0 auto;
+  background: #003d71;
   font-family: 'Saira', sans-serif;
 }
+@media (max-width:500px) {
+  body .topImage img {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+header {
+  width: 210px;
+  word-wrap: normal;
+}
+btn {
+  padding-top: 5px;
+}
 p {
-  font-size: 2.2rem;
+  color: #fffbf7;
+  font-size: 1rem;
 }
 h2 {
-  font-size: 3.7rem;
+  font-size: 1.7rem;
+  color: #002649;
 }
 i {
-  color: @snow;
+  font-size: 4rem;
+  color: #fffbf7;
 }
 .picture-box {
   display: flex;
@@ -154,9 +172,17 @@ i {
   display: flex;
   direction: row;
 }
-.topImage {
+.topImage img {
+  height: 300px;
+  width: 50%;
+  margin: auto;
   display: flex;
   justify-content: center;
+}
+.welcome img {
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
 }
 .bottom-content {
   padding: 5px;
@@ -165,11 +191,21 @@ i {
 }
 .tradeCard {
   border-radius: 10px;
-  height: 475px;
-  width: 300px;
+  height: 355px;
+  width: 265px;
+}
+.communityPic img {
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
+}
+.midPic {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .topLogo {
-  background: #202b31;
+  background: #002649;
+  border-radius: 10px;
 }
 nav {
   display: flex;
@@ -179,15 +215,15 @@ nav {
   background: #d65600;
 }
 nav a {
+  color: #fffbf7;
   padding: 5px;
-  text-shadow: 0 0 7px #fffbf7;
-  color: #202b31;
   text-decoration: none;
 }
 .bottomLogo {
-  background: #202b31;
   display: flex;
   justify-content: flex-end;
+  background: #202b31;
+  border-radius: 10px;
 }
 .form {
   font-size: 1.3rem;
@@ -205,7 +241,7 @@ nav a {
   padding: 7px;
 }
 .termsPrivacy {
-  width: 275px;
+  width: 290px;
 }
 .field {
   display: flex;

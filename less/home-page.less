@@ -1,23 +1,53 @@
 body {
-  height: 100vh;
-  width:950px;
-  margin: auto;
-  background: @oxford;
-  font-family: 'Saira', sans-serif;  
+  height: 100vh;  
+  margin:0 auto;
+  background: @imperialBlue;
+  font-family: 'Saira', sans-serif;
+  
+@media @tablet{  
+  
+  }
+
+@media @phone{  
+  .topImage img{ 
+  height:300px;
+  width:100%; 
+  margin:auto;
+  display: flex;
+  justify-content:center; 
+} 
+  
+  } 
 }
 
+
+header{
+  width:210px;
+  word-wrap: normal;
+}
+
+
+btn{
+  padding-top: 5px;
+}
+
+
 p{  
-  font-size:2.2rem;
+  color:@snow;
+  font-size:1rem;
 }
 
 h2 {
-  font-size: 3.7rem;
+  font-size: 1.7rem;
+  color:@oxford;
 }
 
 
 i{
-  color: @snow;
-}
+  font-size: 4rem;
+  color: @snow;  
+  }
+
 
 
 .picture-box {
@@ -35,10 +65,20 @@ i{
   direction: row;
 }
 
-.topImage{
+.topImage img{ 
+  height:300px;
+  width:50%; 
+  margin:auto;
   display: flex;
-  justify-content:center; 
+  justify-content:center;  
 }
+
+.welcome img{  
+  border-radius: 10px;
+height:250px;
+  width:250px; 
+}
+
 
 .bottom-content {
   padding:5px;
@@ -48,6 +88,16 @@ i{
 
 .tradeCard{
   border-radius: 10px;
-  height:475px;
-  width:300px;
+  height:355px;
+  width:265px;
+}
+.communityPic img{
+  border-radius: 10px;
+height:250px;
+  width:250px; 
+}
+
+.midPic{
+  display: flex;
+  flex-direction: column-reverse;
 }
