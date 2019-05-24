@@ -181,8 +181,7 @@ i {
 }
 .topImage img {
   height: 300px;
-  width: 80%;
-  margin: auto;
+  width: 325px;
   display: flex;
   justify-content: center;
 }
@@ -190,7 +189,7 @@ i {
   padding: 20px;
   border-radius: 30px;
   height: 250px;
-  width: 250px;
+  width: 375px;
 }
 .bottom-content {
   padding: 5px;
@@ -205,7 +204,7 @@ i {
 .communityPic img {
   border-radius: 10px;
   height: 250px;
-  width: 250px;
+  width: 350px;
 }
 .midPic {
   display: flex;
