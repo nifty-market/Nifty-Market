@@ -136,6 +136,7 @@ body {
 @media (max-width:800px) {
   body {
     height: 100vw;
+    background: red;
   }
 }
 @media (max-width:500px) {
@@ -144,6 +145,7 @@ body {
     width: 80%;
     display: flex;
     justify-content: center;
+    background: yellow;
   }
 }
 header {
@@ -159,6 +161,7 @@ h2 {
   color: #002649;
 }
 i {
+  padding: 10px;
   font-size: 4rem;
   color: #fffbf7;
 }
@@ -166,9 +169,11 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 55px;
 }
 .container {
   overflow: hidden;
+  padding: 20px;
 }
 .top-content {
   display: flex;
@@ -176,13 +181,14 @@ i {
 }
 .topImage img {
   height: 300px;
-  width: 50%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
 }
 .welcome img {
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 30px;
   height: 250px;
   width: 250px;
 }
@@ -238,7 +244,6 @@ nav a {
 .form a {
   color: #d65600;
   text-decoration: none;
-  text-shadow: 0 0 3px #fffbf7;
 }
 .clearFix {
   padding: 7px;
@@ -283,10 +288,12 @@ h1 {
 .slider {
   position: relative;
   overflow: hidden;
-  height: 75vh;
-  width: 60%;
+  height: 65vh;
+  width: 80%;
 }
 .slide {
+  position: absolute;
+  margin: 0 auto;
   justify-content: center;
   top: 0;
   right: 0;
@@ -308,6 +315,7 @@ h1 {
   text-align: center;
   border-radius: 5px;
   background-color: #202b31;
+  height: 50%;
   color: #fffbf7;
 }
 .slide .content h1 {
@@ -355,13 +363,13 @@ h1 {
 }
 /* Backgorund Images */
 .slide:first-child {
-  background: url('/img/niftyLogo/Constructed_rank.jpg') no-repeat center top / cover;
+  background: url('/img/niftyLogo/kamil-s-1170942-unsplash.jpg') no-repeat center top / cover;
 }
 .slide:nth-child(2) {
-  background: url('/img/niftyLogo/Constructed_rank.jpg') no-repeat center top / cover;
+  background: url('/img/niftyLogo/AdobeStock_227126284.jpeg') no-repeat center top / cover;
 }
 .slide:nth-child(3) {
-  background: url('') no-repeat center top / cover;
+  background: url('/img/niftyLogo/play-yu-gi-oh-magic-the.jpg') no-repeat center top / cover;
 }
 @font-face {
   font-family: 'Roboto';
@@ -424,4 +432,53 @@ body {
 }
 #calc-parent {
   margin-left: calc(50% - 100px);
+}
+body {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  background: #003d71;
+  font-family: 'Saira', sans-serif;
+}
+@media (max-width:800px) {
+  body {
+    height: 100vw;
+  }
+}
+@media (max-width:500px) {
+  body .topImage img {
+    height: 300px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.devImages {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+.devImages img {
+  padding: 10px;
+  height: 250px;
+  border-radius: 20px;
+}
+.bottomBoxes {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bottomBoxes img {
+  height: 250px;
+  border-radius: 20px;
+  width: 250px;
+}
+header {
+  width: 210px;
+}
+h2 {
+  color: #d65600;
 }

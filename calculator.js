@@ -43,7 +43,6 @@ backspacebtn.onclick = () => {
 };
 
 function buttonPressed(num) {
-  //limit characters to 7
   if (currentValue.toString().length >= 7) {
     console.log("too many chars");
     return;

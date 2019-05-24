@@ -1,0 +1,58 @@
+body {
+  height: 100vh;  
+  width: 80%;
+  margin: 0 auto;
+  background: @imperialBlue;
+  font-family: 'Saira', sans-serif;
+
+
+@media @tablet{
+    height:100vw; 
+
+  }
+
+  @media @phone{  
+    .topImage img{ 
+    height:300px;
+    width:80%; 
+    display: flex;
+    justify-content:center; 
+    }   
+  } 
+}
+
+.devImages {
+    width:250px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+            
+img{    
+    padding:10px;
+    height:250px;
+    border-radius: 20px;
+ } 
+}
+
+
+.bottomBoxes {     
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+img{    
+    height:250px;    
+    border-radius: 20px;
+    width:250px;
+ } 
+}
+
+
+header{
+  width:210px;
+  }
+
+  h2{
+    color:@orange;
+  }
