@@ -175,6 +175,15 @@ i {
   overflow: hidden;
   padding: 20px;
 }
+.container .row {
+  display: flex;
+  flex-direction: row;
+}
+.container .row-photo img {
+  height: 25rem;
+  margin-left: 13rem;
+  border-radius: 20px;
+}
 .top-content {
   display: flex;
   direction: row;
@@ -204,7 +213,7 @@ i {
 .communityPic img {
   border-radius: 10px;
   height: 250px;
-  width: 350px;
+  width: 80%;
 }
 .midPic {
   display: flex;
@@ -235,9 +244,9 @@ nav a {
 }
 .form {
   font-size: 1.3rem;
-  padding: 9px;
+  padding: 50px;
   border: 7px solid #fffbf7;
-  border-radius: 15px;
+  border-radius: 20px;
   display: inline-block;
 }
 .form a {
@@ -254,6 +263,9 @@ nav a {
   display: flex;
   justify-content: space-between;
   width: 275px;
+}
+b {
+  font-size: 1.8rem;
 }
 label {
   padding: 1px;
@@ -300,7 +312,7 @@ h1 {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .slide.current {
   opacity: 1;
@@ -312,7 +324,6 @@ h1 {
   opacity: 0;
   width: 170px;
   text-align: center;
-  border-radius: 5px;
   background-color: #202b31;
   height: 50%;
   color: #fffbf7;
