@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 * {
   box-sizing: border-box;
@@ -7,20 +7,19 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: @snow;
   line-height: 1.6;
 }
-p{
-    font-size: 2rem;
+p {
+  font-size: 2rem;
 }
 
-h1{
-    font-size: 2rem;
+h1 {
+  font-size: 2rem;
 }
 
-
-.carouselBox{
+.carouselBox {
   display: flex;
   justify-content: center;
 }
@@ -71,18 +70,20 @@ h1{
   transition: all 0.7s ease-in-out 0.3s;
 }
 
-.buttons{
+.buttons {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
 }
 
-.buttons button#next {   
+.buttons button#next {
   bottom: 0;
-  right: 15px;  
+  right: 15px;
 }
 
-.buttons button#prev {  
+.buttons button#prev {
   left: 15px;
 }
 
@@ -113,19 +114,17 @@ h1{
   }
 }
 
-
-
 /* Backgorund Images */
- 
- .slide:first-child {
-  background: url('/img/niftyLogo/kamil-s-1170942-unsplash.jpg') no-repeat
+
+.slide:first-child {
+  background: url("/img/niftyLogo/kamil-s-1170942-unsplash.jpg") no-repeat
     center top/cover;
 }
- .slide:nth-child(2) {
-  background: url('/img/niftyLogo/AdobeStock_227126284.jpeg')no-repeat center top/cover;
-
+.slide:nth-child(2) {
+  background: url("/img/niftyLogo/AdobeStock_227126284.jpeg") no-repeat center
+    top/cover;
 }
- .slide:nth-child(3) {
-  background: url('/img/niftyLogo/play-yu-gi-oh-magic-the.jpg') no-repeat
-    center top/cover; 
+.slide:nth-child(3) {
+  background: url("/img/niftyLogo/play-yu-gi-oh-magic-the.jpg") no-repeat center
+    top/cover;
 }

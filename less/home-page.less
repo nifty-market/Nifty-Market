@@ -1,123 +1,119 @@
 body {
-  height: 100vh;  
-  width: 80%;
-  margin:0 auto;
+  width: 100%;
+  margin: 0 auto;
   background: @imperialBlue;
-  font-family: 'Saira', sans-serif;
-  
-  @media @tablet{
-    height:100vw;
-    background: red;
+  font-family: "Saira", sans-serif;
 
+  @media @tablet {
+    margin: 0 auto;
   }
 
-  @media @phone{  
-    .topImage img{ 
-    height:300px;
-    width:80%; 
-    display: flex;
-    justify-content:center; 
-    background: yellow;
-    }   
-  } 
+  @media @phone {
+    .topImage img {
+      height: 300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .devImages,
+    .bottomBoxes {
+      flex-flow: row wrap;
+    }
+  }
 }
 
-
-header{
-  width:210px;
+header {
+  width: 210px;
   word-wrap: normal;
 }
 
-
-p{  
-  color:@snow;
-  font-size:1rem;
+p {
+  color: @snow;
+  font-size: 1rem;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.7rem;
-  color:@oxford;
+  color: @oxford;
 }
 
-
-i{
-  padding:10px;
+i {
+  padding: 10px;
   font-size: 4rem;
-  color: @snow;  
-  }
-
-
+  color: @snow;
+}
 
 .iconContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 55px;
-  
-  
+  padding: 50px;
 }
 
+.container {
+  padding: 20px;
+  width: 100%;
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 
-
-
-
-
-.container{
-  overflow: hidden;
-  padding:20px;
-    .row{
+    @media @phone {
       display: flex;
-      flex-direction: row;
-      
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
     }
-    .row-photo {
-      img {
-        height: 25rem;
-        margin-left: 13rem;
-        border-radius: 20px;
-      }
+  }
+  .row-photo {
+    display: block;
+    img {
+      height: 450px;
+
+      border-radius: 20px;
     }
+  }
 }
 
-.top-content {  
+.top-content {
   display: flex;
   direction: row;
 }
 
-.topImage img{ 
-  height:300px;
-  width:325px;
+.topImage img {
+  height: 300px;
+  width: 325px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
-.welcome img{  
+.welcome img {
   padding: 20px;
   border-radius: 30px;
-  height:250px;
-  width:375px; 
-  
+  height: 250px;
+  width: 375px;
 }
-
 
 .bottom-content {
-  padding:5px;
+  padding: 5px;
   display: flex;
-  direction: row;  
+  direction: row;
 }
 
-.tradeCard{
+.tradeCard {
   border-radius: 10px;
-  height:355px;
-  width:265px;
+  height: 355px;
+  width: 265px;
 }
-.communityPic img{
+.communityPic img {
   border-radius: 10px;
-height:250px;
-  width:80%; 
+  height: 250px;
+  width: 80%;
 }
 
-.midPic{
+.midPic {
   display: flex;
   flex-direction: column-reverse;
 }

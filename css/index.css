@@ -127,25 +127,26 @@ table {
   border-spacing: 0;
 }
 body {
-  height: 100vh;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background: #003d71;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
 }
 @media (max-width:800px) {
   body {
-    height: 100vw;
-    background: red;
+    margin: 0 auto;
   }
 }
 @media (max-width:500px) {
   body .topImage img {
     height: 300px;
-    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    background: yellow;
+  }
+  body .devImages,
+  body .bottomBoxes {
+    flex-flow: row wrap;
   }
 }
 header {
@@ -155,6 +156,7 @@ header {
 p {
   color: #fffbf7;
   font-size: 1rem;
+  text-align: center;
 }
 h2 {
   font-size: 1.7rem;
@@ -169,19 +171,31 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 55px;
+  padding: 50px;
 }
 .container {
-  overflow: hidden;
   padding: 20px;
+  width: 100%;
 }
 .container .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+.container .row-photo {
+  display: block;
 }
 .container .row-photo img {
-  height: 25rem;
-  margin-left: 13rem;
+  height: 450px;
   border-radius: 20px;
 }
 .top-content {
@@ -241,34 +255,38 @@ nav a {
   justify-content: flex-end;
   background: #202b31;
   border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 .form {
   font-size: 1.3rem;
   padding: 50px;
   border: 7px solid #fffbf7;
   border-radius: 20px;
-  display: inline-block;
 }
-.form a {
+.form .form a {
   color: #d65600;
   text-decoration: none;
 }
-.clearFix {
+.form .clearFix {
   padding: 7px;
 }
-.termsPrivacy {
+.form .termsPrivacy {
   width: 290px;
 }
 .field {
   display: flex;
   justify-content: space-between;
-  width: 275px;
+  width: 325px;
 }
 b {
   font-size: 1.8rem;
-}
-label {
-  padding: 1px;
 }
 @font-face {
   font-family: 'Roboto';
@@ -282,7 +300,7 @@ label {
   padding: 0;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fffbf7;
   line-height: 1.6;
 }
@@ -340,6 +358,8 @@ h1 {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
 }
 .buttons button#next {
   bottom: 0;
@@ -373,13 +393,13 @@ h1 {
 }
 /* Backgorund Images */
 .slide:first-child {
-  background: url('/img/niftyLogo/kamil-s-1170942-unsplash.jpg') no-repeat center top / cover;
+  background: url("/img/niftyLogo/kamil-s-1170942-unsplash.jpg") no-repeat center top / cover;
 }
 .slide:nth-child(2) {
-  background: url('/img/niftyLogo/AdobeStock_227126284.jpeg') no-repeat center top / cover;
+  background: url("/img/niftyLogo/AdobeStock_227126284.jpeg") no-repeat center top / cover;
 }
 .slide:nth-child(3) {
-  background: url('/img/niftyLogo/play-yu-gi-oh-magic-the.jpg') no-repeat center top / cover;
+  background: url("/img/niftyLogo/play-yu-gi-oh-magic-the.jpg") no-repeat center top / cover;
 }
 @font-face {
   font-family: 'Roboto';
@@ -444,21 +464,14 @@ body {
   margin-left: calc(50% - 100px);
 }
 body {
-  height: 100vh;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background: #003d71;
-  font-family: 'Saira', sans-serif;
-}
-@media (max-width:800px) {
-  body {
-    height: 100vw;
-  }
+  font-family: "Saira", sans-serif;
 }
 @media (max-width:500px) {
   body .topImage img {
     height: 300px;
-    width: 80%;
     display: flex;
     justify-content: center;
   }
@@ -485,6 +498,10 @@ body {
   height: 250px;
   border-radius: 20px;
   width: 250px;
+}
+.imageContainer {
+  width: 80%;
+  margin: 0 auto;
 }
 header {
   width: 210px;
