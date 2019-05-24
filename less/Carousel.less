@@ -19,11 +19,17 @@ h1{
     font-size: 2rem;
 }
 
+
+.carouselBox{
+  display: flex;
+  justify-content: center;
+}
+
 .slider {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  width: 50%;
+  height: 75vh;
+  width: 60%;
 }
 
 .slide {
@@ -34,6 +40,7 @@ h1{
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+  border-radius: 10px;
 }
 
 .slide.current {
@@ -42,13 +49,14 @@ h1{
 
 .slide .content {
   position: absolute;
-  bottom: 70px;
-  left: -600px;
+  top: 0px;
+  right: 600px;
   opacity: 0;
-  width: 400px;
-  background-color: @orange;
+  width: 170px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: @charleston;
   color: @snow;
-  padding: 25px;
 }
 
 .slide .content h1 {
@@ -61,14 +69,18 @@ h1{
   transition: all 0.7s ease-in-out 0.3s;
 }
 
-.buttons button#next {
-  position: absolute;
-  right: 15px;
-  
+.buttons{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.buttons button#prev {
-  position: absolute;  
+.buttons button#next {   
+  bottom: 0;
+  right: 15px;  
+}
+
+.buttons button#prev {  
   left: 15px;
 }
 
@@ -103,15 +115,15 @@ h1{
 
 /* Backgorund Images */
  
-//  .slide:first-child {
-//   background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat
-//     center top/cover;
-// }
-//  .slide:nth-child(2) {
-//   background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
-//     center top/cover;
-// }
-//  .slide:nth-child(3) {
-//   background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
-//     center top/cover;
-// }
+ .slide:first-child {
+  background: url('/img/niftyLogo/Constructed_rank.jpg') no-repeat
+    center top/cover;
+}
+ .slide:nth-child(2) {
+  background: url('/img/niftyLogo/Constructed_rank.jpg')no-repeat center top/cover;
+
+}
+ .slide:nth-child(3) {
+  background: url('') no-repeat
+    center top/cover; 
+}

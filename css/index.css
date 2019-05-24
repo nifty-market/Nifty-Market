@@ -128,15 +128,20 @@ table {
 }
 body {
   height: 100vh;
+  width: 80%;
   margin: 0 auto;
   background: #003d71;
   font-family: 'Saira', sans-serif;
 }
+@media (max-width:800px) {
+  body {
+    height: 100vw;
+  }
+}
 @media (max-width:500px) {
   body .topImage img {
     height: 300px;
-    width: 100%;
-    margin: auto;
+    width: 80%;
     display: flex;
     justify-content: center;
   }
@@ -144,9 +149,6 @@ body {
 header {
   width: 210px;
   word-wrap: normal;
-}
-btn {
-  padding-top: 5px;
 }
 p {
   color: #fffbf7;
@@ -215,6 +217,7 @@ nav {
   background: #d65600;
 }
 nav a {
+  margin: 0 auto;
   color: #fffbf7;
   padding: 5px;
   text-decoration: none;
@@ -273,11 +276,15 @@ p {
 h1 {
   font-size: 2rem;
 }
+.carouselBox {
+  display: flex;
+  justify-content: center;
+}
 .slider {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  width: 50%;
+  height: 75vh;
+  width: 60%;
 }
 .slide {
   justify-content: center;
@@ -287,19 +294,21 @@ h1 {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+  border-radius: 10px;
 }
 .slide.current {
   opacity: 1;
 }
 .slide .content {
   position: absolute;
-  bottom: 70px;
-  left: -600px;
+  top: 0px;
+  right: 600px;
   opacity: 0;
-  width: 400px;
-  background-color: #d65600;
+  width: 170px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #202b31;
   color: #fffbf7;
-  padding: 25px;
 }
 .slide .content h1 {
   margin-bottom: 10px;
@@ -309,12 +318,16 @@ h1 {
   transform: translateX(600px);
   transition: all 0.7s ease-in-out 0.3s;
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
 .buttons button#next {
-  position: absolute;
+  bottom: 0;
   right: 15px;
 }
 .buttons button#prev {
-  position: absolute;
   left: 15px;
 }
 .buttons button {
@@ -341,6 +354,15 @@ h1 {
   }
 }
 /* Backgorund Images */
+.slide:first-child {
+  background: url('/img/niftyLogo/Constructed_rank.jpg') no-repeat center top / cover;
+}
+.slide:nth-child(2) {
+  background: url('/img/niftyLogo/Constructed_rank.jpg') no-repeat center top / cover;
+}
+.slide:nth-child(3) {
+  background: url('') no-repeat center top / cover;
+}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -363,7 +385,7 @@ body {
   padding-top: 3px;
 }
 .calc-btn:hover {
-  background-color: orange;
+  background-color: #d65600;
 }
 .row {
   display: table;
@@ -394,21 +416,12 @@ body {
   border-radius: 7px 7px 0 0;
 }
 .calc-btn-operator {
-  background-color: green;
+  background-color: #003d71;
   color: white;
-}
-h1 {
-  text-align: center;
-  margin-top: 50px;
-  color: Green;
 }
 #calc-equals {
   border-radius: 0 0 7px 0;
 }
 #calc-parent {
   margin-left: calc(50% - 100px);
-  background: black;
-}
-html {
-  background: black;
 }
