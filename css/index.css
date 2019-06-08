@@ -172,6 +172,7 @@ i {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 50px;
+  text-align: center;
 }
 .container {
   padding: 20px;
@@ -180,7 +181,7 @@ i {
 .container .row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 @media (max-width:500px) {
