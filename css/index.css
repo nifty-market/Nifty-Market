@@ -252,18 +252,12 @@ nav a {
   text-decoration: none;
 }
 .bottomLogo {
-  display: flex;
-  justify-content: flex-end;
+  width: 208px;
   background: #202b31;
   border-radius: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+.bottomLogo img {
+  align-items: flex-end;
 }
 .form {
   font-size: 1.3rem;
