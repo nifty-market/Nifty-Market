@@ -209,31 +209,6 @@ i {
   display: flex;
   justify-content: center;
 }
-.welcome img {
-  padding: 20px;
-  border-radius: 30px;
-  height: 250px;
-  width: 375px;
-}
-.bottom-content {
-  padding: 5px;
-  display: flex;
-  direction: row;
-}
-.tradeCard {
-  border-radius: 10px;
-  height: 355px;
-  width: 265px;
-}
-.communityPic img {
-  border-radius: 10px;
-  height: 250px;
-  width: 80%;
-}
-.midPic {
-  display: flex;
-  flex-direction: column-reverse;
-}
 .topLogo {
   background: #002649;
   border-radius: 10px;
